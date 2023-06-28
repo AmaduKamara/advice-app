@@ -11,7 +11,7 @@ const App = () => {
 
   return (
     <div>
-      <div class="container mx-auto py-16">
+      <div className="container mx-auto py-16">
         <h1 className="text-center text-3xl font-semibold leading-9 text-teal-400">
           React Advice App
         </h1>
