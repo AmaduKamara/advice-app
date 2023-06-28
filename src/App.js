@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Message from "./components/Message";
 
 const App = () => {
   const [advice, setAdvice] = useState();
@@ -21,13 +22,8 @@ const App = () => {
         <h1 className="text-center text-3xl font-semibold leading-9 text-teal-400">
           React Advice App
         </h1>
-        <div className="w-[700px] container mx-auto mt-10 rounded-xl p-10 bg-teal-50 shadow-xl">
-          <h3 className="text-center text-xl">{advice}</h3>
-          <br />
-          <p className="text-sm">
-            You have read <span>{adviceCount}</span> pieces of advice
-          </p>
-        </div>
+
+        <Message advice={advice} adviceCount={adviceCount} />
 
         <div className="flex justify-center mt-16">
           <button
